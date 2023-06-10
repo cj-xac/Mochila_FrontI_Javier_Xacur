@@ -1,0 +1,340 @@
+/*reset*/
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* general style */
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+/*top part of header*/
+.header-top {
+    align-items: center;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    height: 20px;
+    justify-content: flex-end;
+}
+
+/* top header text */
+
+.header-top p {
+    color: white;
+    margin-right: 800px;
+}
+
+.header-top-selects {
+    display: flex; /* Added: Display selects in a row */
+    align-items: center; /* Added: Align items vertically */
+}
+
+/*region and language menu*/
+.header-top select{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+/*bottom part of header*/
+
+.header-bottom {
+    align-items: center;
+    background-color: rgba(240, 168, 62, 1);
+    color: white;
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* bottom part of header image */
+
+.logo {
+    margin-left: 30px;
+}
+
+/*bottom part of header list of options*/
+.header-bottom ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+.header-bottom ul li{
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+/*promotional banner*/
+
+.banner {
+    align-items: center;
+    background: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+}
+
+/*general style for promotional banner elements*/
+
+.banner h2,
+.banner p,
+.banner button {
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 800px;
+    text-align: center;
+}
+
+/*specific style for promotional banner elements*/
+
+.banner h2 {
+    background-color: white;
+    border-radius: 5px;
+    color: #3C2313;
+    line-height: 35px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.banner p {
+    color: #3C2313;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 15px;
+}
+
+.banner button {
+    background: #F0A83E;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    height: 49px;
+    margin-top: 15px;
+    width: 141px;
+}
+
+/*featured products section*/
+
+.featured {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.featured img {
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.featured h1 {
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.featured span {
+    color: #666666;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/*featured products images and prices*/
+
+.products {
+    display: flex;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.products img {
+    margin-top: 50px;
+    height: 365px;
+    width: 365px;
+
+}
+
+.card figcaption:nth-of-type(1) {
+    color: #3C2313;
+}
+
+.card figcaption:nth-of-type(2) {
+    color: #F0A83E;
+    margin-top: 5px;
+}
+
+/*contact info form*/
+
+.contact-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* contact info header */
+
+.contact-form h2 {
+    color: #3C2313;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* contact info text fields */
+
+.contact-form input {
+    background: #3C2313;
+    border-radius: 15px;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    width: 350px;
+}
+
+.contact-form input::placeholder {
+    color:white;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+/* form buttons */
+
+.contact-form button {
+    border-style: none;
+    border-radius: 15px;
+    height: 34px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 110px;
+}
+
+.contact-form button:nth-of-type(1) {
+    background: #8A8787;
+
+}
+
+.contact-form button:nth-of-type(2) {
+    background: #F0A83E;
+}
+
+/*newsletter*/
+
+.subscribe {
+    align-items: center;
+    background: rgba(240, 168, 62, 1);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.subscribe img {
+    margin-left: 40px;
+}
+
+.subscribe p {
+    color: white;
+    font-weight: 700;
+    margin-right: 450px;
+}
+
+.subscribe input {
+    border-radius: 15px;
+    height: 40px;
+    margin-right: 40px;
+    width: 270px;
+}
+
+.subscribe button {
+    background: #3C2313;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    font-size: 10px;
+    height: 35px;
+    margin-right: 20px;
+    width: 90px;
+}
+
+/*contact info*/
+
+.contact {
+    align-items: flex-start;
+    background: #3C2313;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 50px;
+    position: relative;
+}
+
+.contact > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact img {
+    height: 57px;
+    width: 58px;
+}
+.contact p {
+    color: rgba(138, 135, 135, 1);
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.contact span {
+    color: white;
+}
+
+.contact > img {
+    align-self: flex-end;
+    height: 23px;
+    margin: 20px;
+    position: absolute;
+    top: 40%;
+    width: 90px;
+}
+
+/*footer*/
+
+footer {
+    align-items: center;
+    background-color: #222222;
+    color: white;
+    font-size: 10px;
+    height: 15px;
+    text-align: center;
+}
