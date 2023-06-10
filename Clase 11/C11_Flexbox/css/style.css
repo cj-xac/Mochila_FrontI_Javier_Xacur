@@ -1,0 +1,77 @@
+/* reset */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* standarizing font */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* header  */
+
+header {
+    align-items: center;
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header img {
+    margin-left: 20px;
+}
+
+header span{
+    line-height: 19px;
+    margin-right: 30px;
+}
+
+/* body images */
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main img {
+    width: 590px;
+}
+
+/* footer */
+
+footer {
+    align-items: center;
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    display: flex;
+    font-size: 16px;
+    height: 150px;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+footer img {
+    margin-right: 20px;
+}
+
+footer span {
+    display: block;
+    line-height: 19px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
